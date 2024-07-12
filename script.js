@@ -1,4 +1,11 @@
-function addingSum(x, y) {
-  return x * y;
-}
-console.log(addingSum(3, 6));
+const showDialogBtn = document.getElementById("show-dialog");
+const dialog = document.getElementById("dialog");
+const dialogClose = document.getElementById("dialog-close");
+
+// showDialogBtn.addEventListener("click", () => {
+//   dialog.showModal();
+// });
+
+// dialogClose.addEventListener("click", () => {
+//   dialog.close();
+// });

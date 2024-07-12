@@ -9,3 +9,4 @@ showDialogBtn.addEventListener("click", () => {
 closeDialog.addEventListener("click", () => {
   dialog.close();
 });
+

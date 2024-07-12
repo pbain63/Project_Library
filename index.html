@@ -31,7 +31,13 @@
               </svg>
             </div>
             <div>
-              <input type="text" id="title" name="title" placeholder="Title" />
+              <input
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Title"
+                required
+              />
             </div>
             <div>
               <input
@@ -39,6 +45,18 @@
                 id="author"
                 name="author"
                 placeholder="Author"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="number"
+                id="number-pages"
+                name="number-page"
+                placeholder="Number of pages"
+                min="1"
+                max="100000"
+                required
               />
             </div>
           </form>

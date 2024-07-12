@@ -1,8 +1,11 @@
 const showDialogBtn = document.getElementById("show-dialog");
 const dialog = document.getElementById("dialog");
-const dialogClose = document.getElementById("dialog-close");
+const closeDialog = document.getElementById("dialog-close");
 
 showDialogBtn.addEventListener("click", () => {
   dialog.showModal();
 });
 
+closeDialog.addEventListener("click", () => {
+  dialog.close();
+});

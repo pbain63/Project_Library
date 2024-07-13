@@ -25,13 +25,14 @@ svg {
 }
 
 .dialog-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .dialog-book-header {
-    margin: auto;
+  margin: auto;
 }
+
 
 
 input[id="number-pages"],

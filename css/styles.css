@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  /* border: 0; */
+  /* font-size: 100%; */
   /* height: 100vh; */
 }
 
@@ -8,11 +10,15 @@ body {
   box-sizing: border-box;
   /* margin: 0; */
 }
+/* input, select {
+    vertical-align: middle;
+} */
 
 input,
 button,
 select {
   font: inherit;
+  /* margin: 0; */
 }
 /*  */
 svg {
@@ -23,4 +29,8 @@ svg {
 input[id="number-pages"],
 select[id="reading-option"] {
   width: 100%;
+}
+button,
+svg[id="dialog-close"] {
+  cursor: pointer;
 }

@@ -10,3 +10,5 @@ closeDialog.addEventListener("click", () => {
   dialog.close();
 });
 
+const myLibrary = [];
+

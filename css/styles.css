@@ -6,6 +6,13 @@ body {
 
 * {
   box-sizing: border-box;
+  /* margin: 0; */
+}
+
+input,
+button,
+select {
+  font: inherit;
 }
 
 input[id="number-pages"],

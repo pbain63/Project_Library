@@ -42,9 +42,12 @@ let optionDisplay;
 
 titleInput.addEventListener("keydown", (event) => {
   titleDisplay = event.key;
+  // title = event.key;
   console.log(titleDisplay);
   // event.preventDefault();
 });
+// console.log(title.id);
+
 authorInput.addEventListener("keydown", (event) => {
   authorDisplay = event.key;
   console.log(authorDisplay);

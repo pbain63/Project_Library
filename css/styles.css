@@ -24,6 +24,11 @@ svg {
   max-width: 100%;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
 .dialog-header {
   display: flex;
   justify-content: space-between;

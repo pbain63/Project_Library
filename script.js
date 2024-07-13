@@ -30,3 +30,29 @@ myLibrary.push(book1);
 console.log(myLibrary);
 console.log(myLibrary[0]);
 
+const titleInput = document.getElementById("title");
+const authorInput = document.getElementById("author");
+const numberOfPagesInput = document.getElementById("number-pages");
+const readingOption = document.getElementById("reading-option");
+// function onChange() {
+//   const readingOption = document.getElementById("reading-option");
+
+//   console.log(readingOption.text);
+// }
+// onChange();
+// console.log(readingOption.text);
+
+titleInput.addEventListener("keydown", (event) => {
+  console.log(event.key);
+  // event.preventDefault();
+});
+authorInput.addEventListener("keydown", (event) => {
+  console.log(event.key);
+});
+numberOfPagesInput.addEventListener("keydown", (event) => {
+  console.log(event.key);
+});
+
+readingOption.addEventListener("change", (event) => {
+  console.log(readingOption.options[readingOption.selectedIndex].text);
+});

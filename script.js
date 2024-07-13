@@ -27,32 +27,36 @@ const newBook = new Book("Hobbit", "p", 9, "Read");
 
 let book1 = newBook.info();
 myLibrary.push(book1);
-console.log(myLibrary);
+// console.log(myLibrary);
 console.log(myLibrary[0]);
 
 const titleInput = document.getElementById("title");
 const authorInput = document.getElementById("author");
 const numberOfPagesInput = document.getElementById("number-pages");
 const readingOption = document.getElementById("reading-option");
-// function onChange() {
-//   const readingOption = document.getElementById("reading-option");
 
-//   console.log(readingOption.text);
-// }
-// onChange();
-// console.log(readingOption.text);
+let titleDisplay;
+let authorDisplay;
+let pagesDisplay;
+let optionDisplay;
 
 titleInput.addEventListener("keydown", (event) => {
-  console.log(event.key);
+  titleDisplay = event.key;
+  console.log(titleDisplay);
   // event.preventDefault();
 });
 authorInput.addEventListener("keydown", (event) => {
-  console.log(event.key);
+  authorDisplay = event.key;
+  console.log(authorDisplay);
 });
 numberOfPagesInput.addEventListener("keydown", (event) => {
-  console.log(event.key);
+  pagesDisplay = event.key;
+  console.log(pagesDisplay);
 });
 
 readingOption.addEventListener("change", (event) => {
-  console.log(readingOption.options[readingOption.selectedIndex].text);
+  optionDisplay = readingOption.options[readingOption.selectedIndex].text;
+  console.log(optionDisplay);
 });
+
+function addBookToLibrary() {}

@@ -12,3 +12,21 @@ closeDialog.addEventListener("click", () => {
 
 const myLibrary = [];
 
+function Book(title, author, pages, readingStatus) {
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.readingStatus = readingStatus;
+  this.info = function () {
+    return `${this.title} ${this.author} ${this.pages} ${this.readingStatus}`;
+  };
+}
+const newBook = new Book("Hobbit", "p", 9, "Read");
+// console.log(newBook.info());
+// console.log(newBook.title);
+
+let book1 = newBook.info();
+myLibrary.push(book1);
+console.log(myLibrary);
+console.log(myLibrary[0]);
+

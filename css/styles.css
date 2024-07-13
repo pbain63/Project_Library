@@ -3,13 +3,12 @@ body {
   padding: 0;
   /* height: 100vh; */
 }
+
 * {
-    box-sizing: border-box;
-}
-input[id="number-pages"] {
-  width: 100%;
+  box-sizing: border-box;
 }
 
+input[id="number-pages"],
 select[id="reading-option"] {
   width: 100%;
 }

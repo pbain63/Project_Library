@@ -2,13 +2,11 @@ body {
   margin: 0;
   padding: 0;
   /* border: 0; */
-  /* font-size: 100%; */
   /* height: 100vh; */
 }
 
 * {
   box-sizing: border-box;
-  /* margin: 0; */
 }
 /* input, select {
     vertical-align: middle;
@@ -26,10 +24,22 @@ svg {
   max-width: 100%;
 }
 
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dialog-book-header {
+    margin: auto;
+}
+
+
 input[id="number-pages"],
 select[id="reading-option"] {
+  /* border-radius: 5px; */
   width: 100%;
 }
+
 button,
 svg[id="dialog-close"] {
   cursor: pointer;

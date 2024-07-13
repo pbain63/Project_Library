@@ -33,10 +33,9 @@ svg {
   margin: auto;
 }
 
-
-
 input[id="number-pages"],
-select[id="reading-option"], button[id="submit"] {
+select[id="reading-option"],
+button[id="submit"] {
   /* border-radius: 5px; */
   width: 100%;
 }
@@ -45,3 +44,38 @@ button,
 svg[id="dialog-close"] {
   cursor: pointer;
 }
+
+
+
+
+/*  */
+dialog[open] {
+  opacity: 1;
+  transform: scaleY(1);
+}
+dialog {
+  opacity: 0;
+  transform: scaleY(0);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out,
+    overlay 0.7s ease-out allow-discrete, display 0.7s ease-out allow-discrete;
+}
+@starting-style {
+  dialog[open] {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+}
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0%);
+  transition: display 0.7s allow-discrete, overlay 0.7s allow-discrete,
+    background-color 0.7s;
+}
+dialog[open]::backdrop {
+  background-color: rgb(0 0 0 / 45%);
+}
+@starting-style {
+  dialog[open]::backdrop {
+    background-color: rgb(0 0 0 /0%);
+  }
+}
+/*  */

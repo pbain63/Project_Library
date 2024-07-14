@@ -28,13 +28,14 @@ const newBook = new Book("Hobbit", "p", 9, "Read");
 let book1 = newBook.info();
 myLibrary.push(book1);
 // console.log(myLibrary);
-console.log(myLibrary[0]);
+// console.log(myLibrary[0]);
 
 const titleInput = document.getElementById("title");
 const authorInput = document.getElementById("author");
 const numberOfPagesInput = document.getElementById("number-pages");
 const readingOption = document.getElementById("reading-option");
 const addLibButton = document.querySelector("#submit");
+const dialogForm = document.querySelector(".dialog-form");
 
 let showNewBook = document.getElementById("new-book-items-show");
 
@@ -48,27 +49,42 @@ titleInput.addEventListener("keydown", (event) => {
   // showNewBook.innerText = titleInput.value;
   // showNewBook.innerText = `${titleInput.value }`;
   // title = event.key;
-  console.log(titleDisplay);
+  // console.log(titleDisplay);
   // event.preventDefault();
 });
 // console.log(title.id);
 
 authorInput.addEventListener("keydown", (event) => {
   authorDisplay = event.key;
-  console.log(authorDisplay);
+  // console.log(authorDisplay);
 });
 numberOfPagesInput.addEventListener("keydown", (event) => {
   pagesDisplay = event.key;
-  console.log(pagesDisplay);
+  // console.log(pagesDisplay);
 });
 
 readingOption.addEventListener("change", (event) => {
   optionDisplay = readingOption.options[readingOption.selectedIndex].text;
-  console.log(optionDisplay);
+  // console.log(optionDisplay);
 });
 
 addLibButton.addEventListener("click", (event) => {
   // showNewBook.textContent = titleInput.value;//this doesn't work
   // showNewBook.textContent = authorInput.value; // only this works
 });
+
+dialogForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  let formdata = new FormData(this); // e.target
+  let titleInputGet = formdata.get("title");
+  let authorInputGet = formdata.get("author");
+  let pagesInputGet = formdata.get("number-page");
+  let readingOptionGet = formdata.get("book");
+
+  console.log(titleInputGet);
+  console.log(authorInputGet);
+  console.log(pagesInputGet);
+  console.log(readingOptionGet);
+});
+
 function addBookToLibrary() {}

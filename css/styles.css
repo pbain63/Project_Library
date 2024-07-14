@@ -24,18 +24,33 @@ svg {
   max-width: 100%;
 }
 
-.container {
+/* .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 250px 1fr;
+  
 }
+
+.left-side-container {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background-color: red;
+}
+.library-book-card {
+  grid-column: 2 / 3;
+  grid-row: 2;
+  background-color: yellow;
+} */
 
 .dialog-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 .dialog-book-header {
   margin: auto;
+  font-size: 200%;
+  /* margin-bottom: 20px; */
 }
 
 input[id="number-pages"],
@@ -45,14 +60,36 @@ button[id="submit"] {
   width: 100%;
 }
 
+input,
+select {
+  display: block;
+  /* font-family: inherit; */
+  font-size: 150%;
+
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+  /* width: 100%; */
+  padding: 5px;
+  height: 40px;
+  box-shadow: inset 1px 1px 3px #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input:hover,
+input:focus {
+  background-color: #eee;
+}
+
 button,
 svg[id="dialog-close"] {
   cursor: pointer;
 }
 
-
-
-
+button[id="submit"] {
+  padding: 5px 0px;
+}
 /*  */
 dialog[open] {
   opacity: 1;

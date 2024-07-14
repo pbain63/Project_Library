@@ -35,6 +35,8 @@ const authorInput = document.getElementById("author");
 const numberOfPagesInput = document.getElementById("number-pages");
 const readingOption = document.getElementById("reading-option");
 
+let showNewBook = document.getElementById("new-book-items-show");
+
 let titleDisplay;
 let authorDisplay;
 let pagesDisplay;
@@ -42,6 +44,7 @@ let optionDisplay;
 
 titleInput.addEventListener("keydown", (event) => {
   titleDisplay = event.key;
+  showNewBook.textContent += titleDisplay;
   // title = event.key;
   console.log(titleDisplay);
   // event.preventDefault();

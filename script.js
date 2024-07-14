@@ -34,6 +34,7 @@ const titleInput = document.getElementById("title");
 const authorInput = document.getElementById("author");
 const numberOfPagesInput = document.getElementById("number-pages");
 const readingOption = document.getElementById("reading-option");
+const addLibButton = document.querySelector("#submit");
 
 let showNewBook = document.getElementById("new-book-items-show");
 
@@ -44,7 +45,8 @@ let optionDisplay;
 
 titleInput.addEventListener("keydown", (event) => {
   titleDisplay = event.key;
-  showNewBook.textContent += titleDisplay;
+  // showNewBook.innerText = titleInput.value;
+  // showNewBook.innerText = `${titleInput.value }`;
   // title = event.key;
   console.log(titleDisplay);
   // event.preventDefault();
@@ -65,4 +67,8 @@ readingOption.addEventListener("change", (event) => {
   console.log(optionDisplay);
 });
 
+addLibButton.addEventListener("click", (event) => {
+  // showNewBook.textContent = titleInput.value;//this doesn't work
+  // showNewBook.textContent = authorInput.value; // only this works
+});
 function addBookToLibrary() {}

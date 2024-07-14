@@ -82,6 +82,17 @@ input:focus {
   background-color: #eee;
 }
 
+input::placeholder {
+  color: blue;
+}
+input:invalid {
+  color: red;
+  /* border-color: red; */
+}
+input:valid {
+  color: black;
+}
+
 button,
 svg[id="dialog-close"] {
   cursor: pointer;

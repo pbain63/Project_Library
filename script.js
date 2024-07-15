@@ -37,7 +37,10 @@ const readingOption = document.getElementById("reading-option");
 const addLibButton = document.querySelector("#submit");
 const dialogForm = document.querySelector(".dialog-form");
 
-let showNewBook = document.getElementById("new-book-items-show");
+let showNewBookTitle = document.getElementById("new-book-items-show-title");
+let showNewBookAuthor = document.getElementById("new-book-items-show-author");
+let showNewBookPages = document.getElementById("new-book-items-show-pages");
+let showNewBookStatus = document.getElementById("new-book-items-show-status");
 
 let titleDisplay;
 let authorDisplay;
@@ -128,13 +131,28 @@ dialogForm.addEventListener("submit", function (e) {
 
   myLibrary.push(newBookDialog);
   // console.log(myLibrary);
-  // console.log(newBookDialog.title);
+  console.log(newBookDialog.title);
+  console.log(newBookDialog.author);
+  console.log(newBookDialog.pages);
+  console.log(newBookDialog.readingStatus);
+
+  showNewBookTitle.textContent = newBookDialog.title;
+  showNewBookAuthor.textContent = newBookDialog.author;
+  showNewBookPages.textContent = newBookDialog.pages;
+  showNewBookStatus.textContent = newBookDialog.readingStatus;
 
   // console.log(myLibrary[myLibrary.length-1]);
-  addBookToLibrary() 
+  addBookToLibrary();
 });
 
 function addBookToLibrary() {
-  console.log(myLibrary);
-  console.log(newBookDialog.title);
+  // console.log(myLibrary);
+  // console.log(newBookDialog.title); //does not work
+  // console.log(myLibrary[myLibrary.length - 1]);
+  // let cardNew = myLibrary[myLibrary.length - 1];
+  // console.log(cardNew);
+  // console.log(title.value);
+  // console.log(author.value);
+  // console.log(pages[value]);
+  // console.log(readingStatus[value]);
 }

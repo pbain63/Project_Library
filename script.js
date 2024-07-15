@@ -21,7 +21,7 @@ function Book(title, author, pages, readingStatus) {
     return `${this.title} ${this.author} ${this.pages} ${this.readingStatus}`;
   };
 }
-const newBook = new Book("Hobbit", "p", 9, "Read");
+let newBook = new Book("Hobbit", "p", 9, "Read");
 // console.log(newBook.info());
 // console.log(newBook.title);
 
@@ -73,18 +73,68 @@ addLibButton.addEventListener("click", (event) => {
   // showNewBook.textContent = authorInput.value; // only this works
 });
 
+// dialogForm.addEventListener("submit", function (e) {
+//   e.preventDefault();
+//   let formdata = new FormData(this); // e.target
+//   let titleInputGet = formdata.get("title");
+//   let authorInputGet = formdata.get("author");
+//   let pagesInputGet = formdata.get("number-page");
+//   let readingOptionGet = formdata.get("book");
+
+//   let obj = {};
+//   obj["name"] = titleInputGet;
+//   obj["writer"] = authorInputGet;
+//   obj["pages"] = pagesInputGet;
+//   obj["option"] = readingOptionGet;
+
+//   myLibrary.push(obj);
+//   // console.log(myLibrary);
+//   // console.log(myLibrary[myLibrary.length-1]);
+
+//   // console.log(titleInputGet);
+//   // console.log(authorInputGet);
+//   // console.log(pagesInputGet);
+//   // console.log(readingOptionGet);
+// });
+
 dialogForm.addEventListener("submit", function (e) {
   e.preventDefault();
   let formdata = new FormData(this); // e.target
+
   let titleInputGet = formdata.get("title");
   let authorInputGet = formdata.get("author");
   let pagesInputGet = formdata.get("number-page");
   let readingOptionGet = formdata.get("book");
 
-  console.log(titleInputGet);
-  console.log(authorInputGet);
-  console.log(pagesInputGet);
-  console.log(readingOptionGet);
+  function BookDialog(title, author, pages, readingStatus) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.readingStatus = readingStatus;
+  }
+  const newBookDialog = new BookDialog(
+    titleInputGet,
+    authorInputGet,
+    pagesInputGet,
+    readingOptionGet
+  );
+  // console.log(newBookDialog);
+
+  // let obj = {};
+  // obj["name"] = titleInputGet;
+  // obj["writer"] = authorInputGet;
+  // obj["pages"] = pagesInputGet;
+  // obj["option"] = readingOptionGet;
+
+  myLibrary.push(newBookDialog);
+  // console.log(myLibrary);
+  // console.log(newBookDialog.title);
+
+  // console.log(myLibrary[myLibrary.length-1]);
+  addBookToLibrary() 
 });
 
-function addBookToLibrary() {}
+function addBookToLibrary() {
+  console.log(myLibrary);
+  console.log(newBookDialog.title);
+}

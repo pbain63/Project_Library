@@ -41,6 +41,8 @@ let showNewBookTitle = document.getElementById("new-book-items-show-title");
 let showNewBookAuthor = document.getElementById("new-book-items-show-author");
 let showNewBookPages = document.getElementById("new-book-items-show-pages");
 let showNewBookStatus = document.getElementById("new-book-items-show-status");
+let showNewBookRemove = document.getElementById("new-book-items-show-remove");
+
 
 let titleDisplay;
 let authorDisplay;
@@ -136,9 +138,9 @@ dialogForm.addEventListener("submit", function (e) {
   console.log(newBookDialog.pages);
   console.log(newBookDialog.readingStatus);
 
-  showNewBookTitle.textContent = newBookDialog.title;
-  showNewBookAuthor.textContent = newBookDialog.author;
-  showNewBookPages.textContent = newBookDialog.pages;
+  showNewBookTitle.textContent = `" ${newBookDialog.title} "`;
+  showNewBookAuthor.textContent = `by ${newBookDialog.author}`;
+  showNewBookPages.textContent = `${newBookDialog.pages} pages`;
   showNewBookStatus.textContent = newBookDialog.readingStatus;
 
   // console.log(myLibrary[myLibrary.length-1]);

@@ -116,6 +116,10 @@ button[id="submit"] {
   margin: 20px;
   text-align: center;
 }
+.new-book-items-card div {
+  /* color: red; */
+  /* margin: 10px; */
+}
 /*  */
 dialog[open] {
   opacity: 1;

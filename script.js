@@ -43,7 +43,6 @@ let showNewBookPages = document.getElementById("new-book-items-show-pages");
 let showNewBookStatus = document.getElementById("new-book-items-show-status");
 let showNewBookRemove = document.getElementById("new-book-items-show-remove");
 
-
 let titleDisplay;
 let authorDisplay;
 let pagesDisplay;
@@ -125,18 +124,12 @@ dialogForm.addEventListener("submit", function (e) {
   );
   // console.log(newBookDialog);
 
-  // let obj = {};
-  // obj["name"] = titleInputGet;
-  // obj["writer"] = authorInputGet;
-  // obj["pages"] = pagesInputGet;
-  // obj["option"] = readingOptionGet;
-
   myLibrary.push(newBookDialog);
   // console.log(myLibrary);
-  console.log(newBookDialog.title);
-  console.log(newBookDialog.author);
-  console.log(newBookDialog.pages);
-  console.log(newBookDialog.readingStatus);
+  // console.log(newBookDialog.title);
+  // console.log(newBookDialog.author);
+  // console.log(newBookDialog.pages);
+  // console.log(newBookDialog.readingStatus);
 
   showNewBookTitle.textContent = `" ${newBookDialog.title} "`;
   showNewBookAuthor.textContent = `by ${newBookDialog.author}`;
@@ -148,13 +141,20 @@ dialogForm.addEventListener("submit", function (e) {
 });
 
 function addBookToLibrary() {
+  // if (!formdata) {
+
+  // } else {
+
+  // }
+
   // console.log(myLibrary);
   // console.log(newBookDialog.title); //does not work
-  // console.log(myLibrary[myLibrary.length - 1]);
+  console.log(myLibrary[myLibrary.length - 1]);
   // let cardNew = myLibrary[myLibrary.length - 1];
   // console.log(cardNew);
   // console.log(title.value);
   // console.log(author.value);
-  // console.log(pages[value]);
+  console.log(pages[value]);
+
   // console.log(readingStatus[value]);
 }

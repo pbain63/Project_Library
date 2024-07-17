@@ -154,7 +154,7 @@ function addBookToLibrary() {
   // console.log(cardNew);
   // console.log(title.value);
   // console.log(author.value);
-  console.log(pages[value]);
+  // console.log(pages[value]);
 
   // console.log(readingStatus[value]);
 }

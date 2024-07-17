@@ -141,11 +141,11 @@ dialogForm.addEventListener("submit", function (e) {
 });
 
 function addBookToLibrary() {
-  // if (!formdata) {
+  if () {
 
-  // } else {
+  } else {
 
-  // }
+  }
 
   // console.log(myLibrary);
   // console.log(newBookDialog.title); //does not work

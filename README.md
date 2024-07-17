@@ -6,3 +6,7 @@ Create a project about adding book to library with author name, book name, pages
 Live preview link:
 
 https://pbain63.github.io/Project_Library/
+
+
+
+Technology: HTML5, CSS, JavaScript

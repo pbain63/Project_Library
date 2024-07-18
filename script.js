@@ -141,11 +141,6 @@ dialogForm.addEventListener("submit", function (e) {
 });
 
 function addBookToLibrary() {
-  if () {
-
-  } else {
-
-  }
 
   // console.log(myLibrary);
   // console.log(newBookDialog.title); //does not work

@@ -142,7 +142,7 @@ dialogForm.addEventListener("submit", function (e) {
 
 function addBookToLibrary() {
 
-  // console.log(myLibrary);
+  console.log(myLibrary);
   // console.log(newBookDialog.title); //does not work
   console.log(myLibrary[myLibrary.length - 1]);
   // let cardNew = myLibrary[myLibrary.length - 1];

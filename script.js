@@ -145,11 +145,11 @@ function addBookToLibrary() {
   console.log(myLibrary);
   // console.log(newBookDialog.title); //does not work
   console.log(myLibrary[myLibrary.length - 1]);
+  
   // let cardNew = myLibrary[myLibrary.length - 1];
   // console.log(cardNew);
   // console.log(title.value);
   // console.log(author.value);
   // console.log(pages[value]);
-
   // console.log(readingStatus[value]);
 }

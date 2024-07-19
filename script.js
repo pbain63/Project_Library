@@ -37,6 +37,7 @@ const readingOption = document.getElementById("reading-option");
 const addLibButton = document.querySelector("#submit");
 const dialogForm = document.querySelector(".dialog-form");
 
+let showNewBookCard = document.querySelector(".new-book-items-card");
 let showNewBookTitle = document.getElementById("new-book-items-show-title");
 let showNewBookAuthor = document.getElementById("new-book-items-show-author");
 let showNewBookPages = document.getElementById("new-book-items-show-pages");

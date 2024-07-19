@@ -66,6 +66,7 @@ authorInput.addEventListener("keydown", (event) => {
 numberOfPagesInput.addEventListener("keydown", (event) => {
   pagesDisplay = event.key;
   // console.log(pagesDisplay);
+  // addBookToLibrary();
 });
 
 readingOption.addEventListener("change", (event) => {
@@ -132,6 +133,7 @@ dialogForm.addEventListener("submit", function (e) {
   // console.log(newBookDialog.pages);
   // console.log(newBookDialog.readingStatus);
 
+  // showNewBookCard.textContent = newBookDialog;
   showNewBookTitle.textContent = `" ${newBookDialog.title} "`;
   showNewBookAuthor.textContent = `by ${newBookDialog.author}`;
   showNewBookPages.textContent = `${newBookDialog.pages} pages`;
@@ -142,11 +144,17 @@ dialogForm.addEventListener("submit", function (e) {
 });
 
 function addBookToLibrary() {
-
-  console.log(myLibrary);
-  // console.log(newBookDialog.title); //does not work
-  console.log(myLibrary[myLibrary.length - 1]);
+  // console.log(showNewBookPages); //doesn't work
   
+  // console.log(title.value);
+  // console.log(titleInputGet.title);
+  // console.log(readingOption.options[readingOption.selectedIndex].text);
+  // console.log(myLibrary.length);
+  // console.log(myLibrary[1]);
+  // console.log(myLibrary);
+  // console.log(newBookDialog.title); //does not work
+  // console.log(myLibrary[myLibrary.length - 1]);
+  // showNewBookTitle.textContent = myLibrary[1];
   // let cardNew = myLibrary[myLibrary.length - 1];
   // console.log(cardNew);
   // console.log(title.value);

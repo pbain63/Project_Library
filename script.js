@@ -66,7 +66,7 @@ authorInput.addEventListener("keydown", (event) => {
 numberOfPagesInput.addEventListener("keydown", (event) => {
   pagesDisplay = event.key;
   // console.log(pagesDisplay);
-  // addBookToLibrary();
+  addBookToLibrary();
 });
 
 readingOption.addEventListener("change", (event) => {
@@ -137,7 +137,7 @@ dialogForm.addEventListener("submit", function (e) {
   showNewBookTitle.textContent = `" ${newBookDialog.title} "`;
   showNewBookAuthor.textContent = `by ${newBookDialog.author}`;
   showNewBookPages.textContent = `${newBookDialog.pages} pages`;
-  showNewBookStatus.textContent = newBookDialog.readingStatus;
+  showNewBookStatus.textContent = `${newBookDialog.readingStatus}`;
 
   // console.log(myLibrary[myLibrary.length-1]);
   addBookToLibrary();
@@ -145,7 +145,7 @@ dialogForm.addEventListener("submit", function (e) {
 
 function addBookToLibrary() {
   // console.log(showNewBookPages); //doesn't work
-  
+
   // console.log(title.value);
   // console.log(titleInputGet.title);
   // console.log(readingOption.options[readingOption.selectedIndex].text);
@@ -157,8 +157,30 @@ function addBookToLibrary() {
   // showNewBookTitle.textContent = myLibrary[1];
   // let cardNew = myLibrary[myLibrary.length - 1];
   // console.log(cardNew);
-  // console.log(title.value);
-  // console.log(author.value);
-  // console.log(pages[value]);
-  // console.log(readingStatus[value]);
+
+  console.log(title.value);
+  console.log(author.value);
+  console.log(readingOption.options[readingOption.selectedIndex].text);
+  console.log(pagesDisplay); //last digit show
+
+  if (myLibrary.length !== 0) {
+    showNewBookRemove.textContent =
+      `" ${title.value} "` +
+      `by ${author.value}` +
+      pagesDisplay +
+      readingOption.options[readingOption.selectedIndex].text;
+  } else {
+    
+  }
+
+  // showNewBookRemove.textContent = `${pagesDisplay.pages} pages`;
+  // showNewBookRemove.textContent = `${readingOption.options[readingOption.selectedIndex].text.readingStatus}`;
+
+  // let cardNew = myLibrary;
+  // console.log(cardNew);
+
+  // console.log(newBookDialog.title);
+  // console.log(this.title);
+
+  // console.log(optionDisplay);
 }

@@ -170,10 +170,9 @@ function addBookToLibrary() {
       pagesDisplay +
       readingOption.options[readingOption.selectedIndex].text;
   } else {
-    showNewBookTitle.textContent = `" ${newBookDialog.title} "`;
-    showNewBookAuthor.textContent = `by ${newBookDialog.author}`;
-    showNewBookPages.textContent = `${newBookDialog.pages} pages`;
-    showNewBookStatus.textContent = `${newBookDialog.readingStatus}`;
+   
+
+    
   }
 
   // showNewBookRemove.textContent = `${pagesDisplay.pages} pages`;

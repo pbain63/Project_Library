@@ -163,14 +163,17 @@ function addBookToLibrary() {
   console.log(readingOption.options[readingOption.selectedIndex].text);
   console.log(pagesDisplay); //last digit show
 
-  if (myLibrary.length !== 0) {
+  if (myLibrary.length !== "") {
     showNewBookRemove.textContent =
       `" ${title.value} "` +
       `by ${author.value}` +
       pagesDisplay +
       readingOption.options[readingOption.selectedIndex].text;
   } else {
-    
+    showNewBookTitle.textContent = `" ${newBookDialog.title} "`;
+    showNewBookAuthor.textContent = `by ${newBookDialog.author}`;
+    showNewBookPages.textContent = `${newBookDialog.pages} pages`;
+    showNewBookStatus.textContent = `${newBookDialog.readingStatus}`;
   }
 
   // showNewBookRemove.textContent = `${pagesDisplay.pages} pages`;

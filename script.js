@@ -161,19 +161,9 @@ function addBookToLibrary() {
   console.log(title.value);
   console.log(author.value);
   console.log(readingOption.options[readingOption.selectedIndex].text);
-  console.log(pagesDisplay); //last digit show
+  console.log(pagesDisplay); // only last digit show
 
-  if (myLibrary.length !== "") {
-    showNewBookRemove.textContent =
-      `" ${title.value} "` +
-      `by ${author.value}` +
-      pagesDisplay +
-      readingOption.options[readingOption.selectedIndex].text;
-  } else {
-   
-
-    
-  }
+  
 
   // showNewBookRemove.textContent = `${pagesDisplay.pages} pages`;
   // showNewBookRemove.textContent = `${readingOption.options[readingOption.selectedIndex].text.readingStatus}`;

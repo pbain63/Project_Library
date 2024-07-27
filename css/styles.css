@@ -8,9 +8,6 @@ body {
 * {
   box-sizing: border-box;
 }
-/* input, select {
-    vertical-align: middle;
-} */
 
 input,
 button,

@@ -144,6 +144,11 @@ dialogForm.addEventListener("submit", function (e) {
 });
 
 function addBookToLibrary() {
+  if () {
+    
+  } else {
+    
+  }
   // console.log(showNewBookPages); //doesn't work
 
   // console.log(title.value);

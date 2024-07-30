@@ -13,7 +13,6 @@ input,
 button,
 select {
   font: inherit;
-  /* margin: 0; */
 }
 /*  */
 svg {

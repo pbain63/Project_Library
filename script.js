@@ -144,9 +144,6 @@ dialogForm.addEventListener("submit", function (e) {
 });
 
 function addBookToLibrary() {
-  
-  // console.log(showNewBookPages); //doesn't work
-
   // console.log(title.value);
   // console.log(titleInputGet.title);
   // console.log(readingOption.options[readingOption.selectedIndex].text);
@@ -163,8 +160,6 @@ function addBookToLibrary() {
   console.log(author.value);
   console.log(readingOption.options[readingOption.selectedIndex].text);
   console.log(pagesDisplay); // only last digit show
-
-  
 
   // showNewBookRemove.textContent = `${pagesDisplay.pages} pages`;
   // showNewBookRemove.textContent = `${readingOption.options[readingOption.selectedIndex].text.readingStatus}`;

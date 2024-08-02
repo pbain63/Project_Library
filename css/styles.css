@@ -83,7 +83,6 @@ input::placeholder {
 }
 input:invalid {
   color: red;
-  /* border-color: red; */
 }
 input:valid {
   color: black;

@@ -154,7 +154,7 @@ function addBookToLibrary() {
   // console.log(myLibrary[myLibrary.length - 1]);
   // showNewBookTitle.textContent = myLibrary[1];
   // let cardNew = myLibrary[myLibrary.length - 1];
-  // console.log(cardNew);
+  
 
   console.log(title.value);
   console.log(author.value);

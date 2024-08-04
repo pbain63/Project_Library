@@ -154,7 +154,6 @@ function addBookToLibrary() {
   // console.log(myLibrary[myLibrary.length - 1]);
   // showNewBookTitle.textContent = myLibrary[1];
   // let cardNew = myLibrary[myLibrary.length - 1];
-  
 
   console.log(title.value);
   console.log(author.value);
@@ -163,9 +162,6 @@ function addBookToLibrary() {
 
   // showNewBookRemove.textContent = `${pagesDisplay.pages} pages`;
   // showNewBookRemove.textContent = `${readingOption.options[readingOption.selectedIndex].text.readingStatus}`;
-
-  // let cardNew = myLibrary;
-  // console.log(cardNew);
 
   // console.log(newBookDialog.title);
   // console.log(this.title);

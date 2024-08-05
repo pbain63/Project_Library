@@ -165,6 +165,5 @@ function addBookToLibrary() {
 
   // console.log(newBookDialog.title);
   // console.log(this.title);
-
   // console.log(optionDisplay);
 }

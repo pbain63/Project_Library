@@ -51,7 +51,6 @@ svg {
 input[id="number-pages"],
 select[id="reading-option"],
 button[id="submit"] {
-  /* border-radius: 5px; */
   width: 100%;
 }
 

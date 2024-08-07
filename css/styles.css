@@ -46,7 +46,6 @@ svg {
 .dialog-book-header {
   margin: auto;
   font-size: 200%;
-  /* margin-bottom: 20px; */
 }
 
 input[id="number-pages"],

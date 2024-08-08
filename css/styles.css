@@ -57,7 +57,7 @@ button[id="submit"] {
 input,
 select {
   display: block;
-  /* font-family: inherit; */
+  font-family: inherit;
   font-size: 150%;
 
   padding: 0;

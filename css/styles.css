@@ -62,7 +62,7 @@ select {
 
   padding: 0;
   margin: 0;
-  /* box-sizing: border-box; */
+
   /* width: 100%; */
   padding: 5px;
   height: 40px;
@@ -110,7 +110,7 @@ button[id="submit"] {
   text-align: center;
 }
 .new-book-items-card div {
- }
+}
 /*  */
 dialog[open] {
   opacity: 1;

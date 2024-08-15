@@ -27,7 +27,7 @@ let newBook = new Book("Hobbit", "p", 9, "Read");
 
 let book1 = newBook.info();
 myLibrary.push(book1);
-// console.log(myLibrary);
+
 // console.log(myLibrary[0]);
 
 const titleInput = document.getElementById("title");

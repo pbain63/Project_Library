@@ -79,30 +79,6 @@ addLibButton.addEventListener("click", (event) => {
   // showNewBook.textContent = authorInput.value; // only this works
 });
 
-// dialogForm.addEventListener("submit", function (e) {
-//   e.preventDefault();
-//   let formdata = new FormData(this); // e.target
-//   let titleInputGet = formdata.get("title");
-//   let authorInputGet = formdata.get("author");
-//   let pagesInputGet = formdata.get("number-page");
-//   let readingOptionGet = formdata.get("book");
-
-//   let obj = {};
-//   obj["name"] = titleInputGet;
-//   obj["writer"] = authorInputGet;
-//   obj["pages"] = pagesInputGet;
-//   obj["option"] = readingOptionGet;
-
-//   myLibrary.push(obj);
-//   // console.log(myLibrary);
-//   // console.log(myLibrary[myLibrary.length-1]);
-
-//   // console.log(titleInputGet);
-//   // console.log(authorInputGet);
-//   // console.log(pagesInputGet);
-//   // console.log(readingOptionGet);
-// });
-
 dialogForm.addEventListener("submit", function (e) {
   e.preventDefault();
   let formdata = new FormData(this); // e.target
@@ -127,13 +103,7 @@ dialogForm.addEventListener("submit", function (e) {
   // console.log(newBookDialog);
 
   myLibrary.push(newBookDialog);
-  // console.log(myLibrary);
-  // console.log(newBookDialog.title);
-  // console.log(newBookDialog.author);
-  // console.log(newBookDialog.pages);
-  // console.log(newBookDialog.readingStatus);
 
-  // showNewBookCard.textContent = newBookDialog;
   showNewBookTitle.textContent = `" ${newBookDialog.title} "`;
   showNewBookAuthor.textContent = `by ${newBookDialog.author}`;
   showNewBookPages.textContent = `${newBookDialog.pages} pages`;
@@ -144,12 +114,8 @@ dialogForm.addEventListener("submit", function (e) {
 });
 
 function addBookToLibrary() {
-
-
   console.log(title.value);
   console.log(author.value);
   console.log(readingOption.options[readingOption.selectedIndex].text);
   console.log(pagesDisplay); // only last digit show
-
-  
 }

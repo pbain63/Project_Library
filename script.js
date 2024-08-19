@@ -160,10 +160,5 @@ function addBookToLibrary() {
   console.log(readingOption.options[readingOption.selectedIndex].text);
   console.log(pagesDisplay); // only last digit show
 
-  // showNewBookRemove.textContent = `${pagesDisplay.pages} pages`;
-  // showNewBookRemove.textContent = `${readingOption.options[readingOption.selectedIndex].text.readingStatus}`;
-
-  // console.log(newBookDialog.title);
-  // console.log(this.title);
-  // console.log(optionDisplay);
+  
 }

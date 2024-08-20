@@ -52,7 +52,6 @@ let optionDisplay;
 titleInput.addEventListener("keydown", (event) => {
   titleDisplay = event.key;
   // showNewBook.innerText = titleInput.value;
-  // showNewBook.innerText = `${titleInput.value }`;
   // title = event.key;
   // console.log(titleDisplay);
   // event.preventDefault();

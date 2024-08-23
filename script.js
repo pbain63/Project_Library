@@ -117,4 +117,7 @@ function addBookToLibrary() {
   console.log(author.value);
   console.log(readingOption.options[readingOption.selectedIndex].text);
   console.log(pagesDisplay); // only last digit show
+
+  myLibrary.map((x) => console.log(x));
 }
+// myLibrary.map((x) => console.log(x));

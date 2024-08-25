@@ -50,13 +50,13 @@ let authorDisplay;
 let pagesDisplay;
 let optionDisplay;
 
-titleInput.addEventListener("keydown", (event) => {
-  titleDisplay = event.key;
+// titleInput.addEventListener("keydown", (event) => {
+  // titleDisplay = event.key;
   // showNewBook.innerText = titleInput.value;
   // title = event.key;
   // console.log(titleDisplay);
   // event.preventDefault();
-});
+// });
 // console.log(title.id);
 
 authorInput.addEventListener("keydown", (event) => {

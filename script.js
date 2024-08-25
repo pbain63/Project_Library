@@ -34,7 +34,8 @@ const titleInput = document.getElementById("title");
 const authorInput = document.getElementById("author");
 const numberOfPagesInput = document.getElementById("number-pages");
 const readingOption = document.getElementById("reading-option");
-const addLibButton = document.querySelector("#submit");
+const addLibButton = document.getElementById("submit");
+// const addLibButton = document.querySelector("#submit");
 const dialogForm = document.querySelector(".dialog-form");
 
 let showNewBookCard = document.querySelector(".new-book-items-card");

@@ -59,25 +59,26 @@ let optionDisplay;
 // });
 // console.log(title.id);
 
-authorInput.addEventListener("keydown", (event) => {
-  authorDisplay = event.key;
+// authorInput.addEventListener("keydown", (event) => {
+  // authorDisplay = event.key;
   // console.log(authorDisplay);
-});
-numberOfPagesInput.addEventListener("keydown", (event) => {
-  pagesDisplay = event.key;
+// });
+
+// numberOfPagesInput.addEventListener("keydown", (event) => {
+  // pagesDisplay = event.key;
   // console.log(pagesDisplay);
-  addBookToLibrary();
-});
+  // addBookToLibrary();
+// });
 
-readingOption.addEventListener("change", (event) => {
-  optionDisplay = readingOption.options[readingOption.selectedIndex].text;
+// readingOption.addEventListener("change", (event) => {
+//   optionDisplay = readingOption.options[readingOption.selectedIndex].text;
   // console.log(optionDisplay);
-});
+// });
 
-addLibButton.addEventListener("click", (event) => {
+// addLibButton.addEventListener("click", (event) => {
   // showNewBook.textContent = titleInput.value;//this doesn't work
   // showNewBook.textContent = authorInput.value; // only this works
-});
+// });
 
 dialogForm.addEventListener("submit", function (e) {
   e.preventDefault();

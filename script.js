@@ -115,11 +115,15 @@ dialogForm.addEventListener("submit", function (e) {
 });
 
 function addBookToLibrary() {
-  console.log(title.value);
-  console.log(author.value);
-  console.log(readingOption.options[readingOption.selectedIndex].text);
-  console.log(pagesDisplay); // only last digit show
+  // console.log(title.value);
+  // console.log(author.value);
+  // console.log(readingOption.options[readingOption.selectedIndex].text);
+  // console.log(pagesDisplay); // only last digit show
 
-  myLibrary.map((x) => console.log(x));
+  myLibrary.map((x) => console.log(x.title));
+  myLibrary.map((x) => console.log(x.author));
+  myLibrary.map((x) => console.log(x.pages));
+  myLibrary.map((x) => console.log(x.readingStatus));
+  // myLibrary.map((x) => console.log(x));
 }
 // myLibrary.map((x) => console.log(x));

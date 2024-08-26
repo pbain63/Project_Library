@@ -92,6 +92,8 @@ button[id="submit"] {
   text-align: center;
 }
 .new-book-items-card div {
+  /* display: grid; */
+
 }
 /*  */
 dialog[open] {

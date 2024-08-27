@@ -114,16 +114,30 @@ dialogForm.addEventListener("submit", function (e) {
   addBookToLibrary();
 });
 
-function addBookToLibrary() {
-  // console.log(title.value);
-  // console.log(author.value);
-  // console.log(readingOption.options[readingOption.selectedIndex].text);
-  // console.log(pagesDisplay); // only last digit show
+// function addBookToLibrary() {
+//   // console.log(title.value);
+//   // console.log(author.value);
+//   // console.log(readingOption.options[readingOption.selectedIndex].text);
+//   // console.log(pagesDisplay); // only last digit show
 
-  myLibrary.map((x) => console.log(x.title));
-  myLibrary.map((x) => console.log(x.author));
-  myLibrary.map((x) => console.log(x.pages));
-  myLibrary.map((x) => console.log(x.readingStatus));
-  // myLibrary.map((x) => console.log(x));
-}
+//   myLibrary.map((x) => console.log(x.title));
+//   myLibrary.map((x) => console.log(x.author));
+//   myLibrary.map((x) => console.log(x.pages));
+//   myLibrary.map((x) => console.log(x.readingStatus));
+//   // myLibrary.map((x) => console.log(x));
+// }
+
 // myLibrary.map((x) => console.log(x));
+
+function addBookToLibrary(myLibrary) {
+  return "<div class=\"new-book-items-card\">" + myLibrary.map(myLibraryCard =>
+    `<div>
+    <div id="new-book-items-show-title">${myLibraryCard.title}</div>
+          <div id="new-book-items-show-author">${myLibraryCard.author}</div>
+          <div id="new-book-items-show-pages">${myLibraryCard.pages}</div>
+          <div id="new-book-items-show-status">${myLibraryCard.readingStatus}</div>
+          <div id="new-book-items-show-remove"></div>
+    </div>`).join('') + "</div>";
+  
+ 
+}

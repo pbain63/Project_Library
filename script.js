@@ -38,12 +38,13 @@ const addLibButton = document.getElementById("submit");
 // const addLibButton = document.querySelector("#submit");
 const dialogForm = document.querySelector(".dialog-form");
 
-let showNewBookCard = document.querySelector(".new-book-items-card");
-let showNewBookTitle = document.getElementById("new-book-items-show-title");
-let showNewBookAuthor = document.getElementById("new-book-items-show-author");
-let showNewBookPages = document.getElementById("new-book-items-show-pages");
-let showNewBookStatus = document.getElementById("new-book-items-show-status");
-let showNewBookRemove = document.getElementById("new-book-items-show-remove");
+const bookContainer = document.querySelector(".book-cards-container");
+const showNewBookCard = document.querySelector(".new-book-items-card");
+const showNewBookTitle = document.getElementById("new-book-items-show-title");
+const showNewBookAuthor = document.getElementById("new-book-items-show-author");
+const showNewBookPages = document.getElementById("new-book-items-show-pages");
+const showNewBookStatus = document.getElementById("new-book-items-show-status");
+const showNewBookRemove = document.getElementById("new-book-items-show-remove");
 
 let titleDisplay;
 let authorDisplay;
@@ -51,33 +52,33 @@ let pagesDisplay;
 let optionDisplay;
 
 // titleInput.addEventListener("keydown", (event) => {
-  // titleDisplay = event.key;
-  // showNewBook.innerText = titleInput.value;
-  // title = event.key;
-  // console.log(titleDisplay);
-  // event.preventDefault();
+// titleDisplay = event.key;
+// showNewBook.innerText = titleInput.value;
+// title = event.key;
+// console.log(titleDisplay);
+// event.preventDefault();
 // });
 // console.log(title.id);
 
 // authorInput.addEventListener("keydown", (event) => {
-  // authorDisplay = event.key;
-  // console.log(authorDisplay);
+// authorDisplay = event.key;
+// console.log(authorDisplay);
 // });
 
 // numberOfPagesInput.addEventListener("keydown", (event) => {
-  // pagesDisplay = event.key;
-  // console.log(pagesDisplay);
-  // addBookToLibrary();
+// pagesDisplay = event.key;
+// console.log(pagesDisplay);
+// addBookToLibrary();
 // });
 
 // readingOption.addEventListener("change", (event) => {
 //   optionDisplay = readingOption.options[readingOption.selectedIndex].text;
-  // console.log(optionDisplay);
+// console.log(optionDisplay);
 // });
 
 // addLibButton.addEventListener("click", (event) => {
-  // showNewBook.textContent = titleInput.value;//this doesn't work
-  // showNewBook.textContent = authorInput.value; // only this works
+// showNewBook.textContent = titleInput.value;//this doesn't work
+// showNewBook.textContent = authorInput.value; // only this works
 // });
 
 dialogForm.addEventListener("submit", function (e) {
@@ -130,14 +131,22 @@ dialogForm.addEventListener("submit", function (e) {
 // myLibrary.map((x) => console.log(x));
 
 function addBookToLibrary(myLibrary) {
-  return "<div class=\"new-book-items-card\">" + myLibrary.map(myLibraryCard =>
-    `<div>
+  return (
+    '<div class="new-book-items-card">' +
+    myLibrary
+      .map(
+        (myLibraryCard) =>
+          `<div>
     <div id="new-book-items-show-title">${myLibraryCard.title}</div>
           <div id="new-book-items-show-author">${myLibraryCard.author}</div>
           <div id="new-book-items-show-pages">${myLibraryCard.pages}</div>
           <div id="new-book-items-show-status">${myLibraryCard.readingStatus}</div>
           <div id="new-book-items-show-remove"></div>
-    </div>`).join('') + "</div>";
-  
- 
+    </div>`
+      )
+      .join("") +
+    "</div>"
+  );
 }
+
+container.innerHTML = addBookToLibrary(myLibrary);

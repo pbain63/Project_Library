@@ -23,7 +23,7 @@ function Book(title, author, pages, readingStatus) {
 }
 let newBook = new Book("Hobbit", "p", 9, "Read");
 // console.log(newBook.info());
-// console.log(newBook.title);
+
 
 let book1 = newBook.info();
 myLibrary.push(book1);

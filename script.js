@@ -24,7 +24,6 @@ function Book(title, author, pages, readingStatus) {
 let newBook = new Book("Hobbit", "p", 9, "Read");
 // console.log(newBook.info());
 
-
 let book1 = newBook.info();
 myLibrary.push(book1);
 
@@ -120,15 +119,12 @@ function addBookToLibrary() {
   // console.log(author.value);
   // console.log(readingOption.options[readingOption.selectedIndex].text);
   // console.log(pagesDisplay); // only last digit show
-
   // myLibrary.map((x) => console.log(x.title));
   // myLibrary.map((x) => console.log(x.author));
   // myLibrary.map((x) => console.log(x.pages));
   // myLibrary.map((x) => console.log(x.readingStatus));
   // myLibrary.map((x) => console.log(x));
 }
-
-
 
 // function addBookToLibrary(myLibrary) {
 //   return (
@@ -149,4 +145,3 @@ function addBookToLibrary() {
 // }
 
 // bookContainer.innerHTML = addBookToLibrary(myLibrary);
-

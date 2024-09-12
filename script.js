@@ -144,4 +144,7 @@ function addBookToLibrary() {
 //   );
 // }
 
+addLibButton.addEventListener("click", () => {
+  dialog.close();
+});
 // bookContainer.innerHTML = addBookToLibrary(myLibrary);

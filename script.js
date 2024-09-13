@@ -112,6 +112,7 @@ dialogForm.addEventListener("submit", function (e) {
 
   // console.log(myLibrary[myLibrary.length-1]);
   addBookToLibrary();
+  addMultipleBookToLibrary();
 });
 
 function addBookToLibrary() {
@@ -126,23 +127,23 @@ function addBookToLibrary() {
   // myLibrary.map((x) => console.log(x));
 }
 
-// function addBookToLibrary(myLibrary) {
-//   return (
-//     '<div class="new-book-items-card">' +
-//     myLibrary
-//       .map(
-//         (myLibraryCard) =>
-//           `
-//         <div id="new-book-items-show-title">${myLibraryCard.title}</div>
-//           <div id="new-book-items-show-author">${myLibraryCard.author}</div>
-//           <div id="new-book-items-show-pages">${myLibraryCard.pages}</div>
-//           <div id="new-book-items-show-status">${myLibraryCard.readingStatus}</div>
-//           <div id="new-book-items-show-remove"></div>`
-//       )
-//       .join("") +
-//     "</div>"
-//   );
-// }
+function addMultipleBookToLibrary(myLibrary) {
+  return (
+    '<div class="new-book-items-card">' +
+    myLibrary
+      .map(
+        (myLibraryCard) =>
+          `
+        <div id="new-book-items-show-title">${myLibraryCard.title}</div>
+          <div id="new-book-items-show-author">${myLibraryCard.author}</div>
+          <div id="new-book-items-show-pages">${myLibraryCard.pages}</div>
+          <div id="new-book-items-show-status">${myLibraryCard.readingStatus}</div>
+          <div id="new-book-items-show-remove"></div>`
+      )
+      .join("") +
+    "</div>"
+  );
+}
 
 addLibButton.addEventListener("click", () => {
   dialog.close();

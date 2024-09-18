@@ -148,4 +148,4 @@ function addMultipleBookToLibrary(myLibrary) {
 addLibButton.addEventListener("click", () => {
   dialog.close();
 });
-// bookContainer.innerHTML = addBookToLibrary(myLibrary);
+bookContainer.innerHTML = addBookToLibrary(myLibrary);

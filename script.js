@@ -37,11 +37,6 @@ const bookContainer = document.querySelector(".book-cards-container");
 const showNewBookStatus = document.getElementById("new-book-items-show-status");
 // const showNewBookRemove = document.getElementById("new-book-items-show-remove");
 
-// let titleDisplay;
-// let authorDisplay;
-// let pagesDisplay;
-// let optionDisplay;
-
 // console.log(myLibrary[myLibrary.length-1]);
 
 function addBookToLibrary(title, author, pages, readingStatus) {

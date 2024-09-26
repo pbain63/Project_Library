@@ -113,6 +113,3 @@ displayBooks();
 
 // showNewBookRemove.forEach((button) => removeBookListener(button));
 
-// window.onload = function () {
-//   displayBooks();
-// };

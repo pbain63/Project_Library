@@ -113,7 +113,9 @@ displayBooks();
 
 // showNewBookRemove.forEach((button) => removeBookListener(button));
 
-const showNewBookRemove = document.querySelectorAll(
-  ".new-book-items-show-remove"
-); //
+const NewBookRemove = document.querySelectorAll(".new-book-items-show-remove"); //
 
+NewBookRemove.addEventListener("click", () => {
+  removeBook(newBook);
+
+});

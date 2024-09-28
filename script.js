@@ -95,23 +95,23 @@ myLibrary.push(
 
 displayBooks();
 
-function removeBookListener(button) {
-  button.addEventListener("click", (event) => {
-    const selectedCard = event.target.closest(".card");
+// function removeBookListener(button) {
+//   button.addEventListener("click", (event) => {
+//     const selectedCard = event.target.closest(".card");
 
-    let bookNumber = selectedCard.getAttribute("data-book-num");
+//     let bookNumber = selectedCard.getAttribute("data-book-num");
 
-    myLibrary.splice(`${bookNumber}`, 1);
-    selectedCard.remove();
-    displayBooks();
-  });
-}
+//     myLibrary.splice(`${bookNumber}`, 1);
+//     selectedCard.remove();
+//     displayBooks();
+//   });
+// }
 
-const showNewBookRemove = document.querySelectorAll(
-  ".new-book-items-show-remove"
-);
+// const showNewBookRemove = document.querySelectorAll(
+//   ".new-book-items-show-remove"
+// );
 
-showNewBookRemove.forEach((button) => removeBookListener(button));
+// showNewBookRemove.forEach((button) => removeBookListener(button));
 
 // window.onload = function () {
 //   displayBooks();

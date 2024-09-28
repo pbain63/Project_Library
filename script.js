@@ -117,4 +117,5 @@ const removeButton = document.querySelectorAll(".new-book-items-show-remove"); /
 
 removeButton.addEventListener("click", () => {
   removeBook(newBook);
+  card.remove();
 });

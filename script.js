@@ -113,9 +113,18 @@ displayBooks();
 
 // showNewBookRemove.forEach((button) => removeBookListener(button));
 
-const removeButton = document.querySelectorAll(".new-book-items-show-remove"); //
+const removeButton = document.getElementsByClassName(
+  ".new-book-items-show-remove"
+); //
 
 removeButton.addEventListener("click", () => {
   removeBook(newBook);
   card.remove();
 });
+
+function removeBook(book) {
+  const bookIndex = myLibrary.indexOf(book);
+  if (bookIndex > -1) {
+    myLibrary.splice(bookIndex, 1);
+  }
+}

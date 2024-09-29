@@ -72,7 +72,7 @@ function addBookToLibrary(title, author, pages, readingStatus) {
 
   const cardAuthor = document.createElement("div");
   cardAuthor.classList.add("card-author");
-  cardAuthor.textContent = `${newBook.author}`;
+  cardAuthor.textContent = `by ${newBook.author}`;
   card.appendChild(cardAuthor);
 
   const cardPages = document.createElement("div");

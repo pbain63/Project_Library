@@ -42,6 +42,33 @@ const showNewBookStatus = document.getElementById("new-book-items-show-status");
 function addBookToLibrary(title, author, pages, readingStatus) {
   const newBook = new Book(title, author, pages, readingStatus);
   myLibrary.push(newBook);
+
+  const card = document.createElement("div");
+  card.classList.add("card");
+
+  const cardTitle = document.createElement("div");
+  cardTitle.classList.add("card-title");
+  cardTitle.textContent = `${newBook.title}`;
+  card.appendChild(cardTitle);
+
+  const cardAuthor = document.createElement("div");
+  cardAuthor.classList.add("card-author");
+  cardAuthor.textContent = `${newBook.author}`;
+  card.appendChild(cardAuthor);
+
+  const cardPages = document.createElement("div");
+  cardPages.classList.add("card-pages");
+  cardPages.textContent = `${newBook.pages}`;
+  card.appendChild(cardPages);
+
+  const cardReadingStatus = document.createElement("div");
+  cardReadingStatus.classList.add("card-readingStatus");
+  cardReadingStatus.textContent = `${newBook.readingStatus}`;
+  card.appendChild(cardReadingStatus);
+
+  bookContainer.appendChild(card);
+
+  // create remove button
 }
 
 // function displayBooks() {
@@ -57,8 +84,7 @@ function addBookToLibrary(title, author, pages, readingStatus) {
 //       <div id="new-book-items-show-author">${book.author}</div>
 //       <div id="new-book-items-show-pages">${book.pages} pages</div>
 //       <div id="new-book-items-show-status">${book.readingStatus}</div>
-          
-           
+
 //             `;
 //     bookContainer.appendChild(card);
 //   });

@@ -77,22 +77,39 @@ button[id="submit"] {
   border-radius: 5px;
 }
 
-#new-book-items-show-title {
+.book-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  overflow: auto;
+  /* grid-template-rows: auto; */
+  /* justify-content: space-around; */
+  gap: 4rem;
+}
+
+.card {
+  width: 15rem;
+  background-color: aqua;
+  text-align: center;
+  overflow-wrap: break-word;
+  /* display: inline-block; */
+}
+
+.card-title {
   font-size: 130%;
 }
-.new-book-items-card {
+
+/* .new-book-items-card {
   background-color: aquamarine;
   display: inline-block;
-  /* padding: 10px; */
-
   width: 300px;
   overflow-wrap: break-word;
   margin: 20px;
   text-align: center;
-}
+} */
 .new-book-items-card div {
   /* display: grid; */
 }
+
 /*  */
 dialog[open] {
   opacity: 1;

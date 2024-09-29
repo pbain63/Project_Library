@@ -3,10 +3,9 @@ const dialog = document.getElementById("dialog");
 const submitButton = document.getElementById("submit");
 
 const showDialogBtn = document.getElementById("show-dialog");
-// const dialog = document.getElementById("dialog");
+
 const closeDialog = document.getElementById("dialog-close");
 const dialogForm = document.getElementById("dialog-form");
-
 
 showDialogBtn.addEventListener("click", () => {
   dialog.showModal();
@@ -26,8 +25,6 @@ submitButton.addEventListener("click", (e) => {
   const author = document.getElementById("author").value;
   const pages = document.getElementById("number-pages").value;
   const readingStatus = document.getElementById("reading-option").value;
-  // console.log(readingStatus);
-  
 
   dialog.close();
   dialogForm.reset();
@@ -83,11 +80,6 @@ function addBookToLibrary(title, author, pages, readingStatus) {
   cardPages.textContent = `${newBook.pages} pages`;
   card.appendChild(cardPages);
 
-  // const cardReadingStatus = document.createElement("div");
-  // cardReadingStatus.classList.add("card-readingStatus");
-  // cardReadingStatus.textContent = `${newBook.readingStatus}`;
-  // card.appendChild(cardReadingStatus);
-
   bookContainer.appendChild(card);
 
   // create remove button
@@ -98,7 +90,6 @@ function addBookToLibrary(title, author, pages, readingStatus) {
 
   // create reading status button
   const readButton = document.createElement("button");
-  // readButton.textContent = newBook.readingStatus ? "Read" : "Want ro read";
   readButton.textContent = `${readingStatus}`;
   // readButton.textContent = "Want to read";
   readButton.classList.add("reading-status");
@@ -109,22 +100,16 @@ function addBookToLibrary(title, author, pages, readingStatus) {
     if (readButton.textContent === "Want to read") {
       readButton.textContent = "Read";
       readButton.style.backgroundColor = "lightGreen";
-      // newBook.readingStatus = false;
     } else if (readButton.textContent === "Read") {
       readButton.textContent = "Reading";
-      // newBook.readingStatus = false;
       readButton.style.backgroundColor = "aqua";
     } else if (readButton.textContent === "Reading") {
       readButton.textContent = "Want to read";
-      // newBook.readingStatus = true;
       readButton.style.backgroundColor = "lightBlue";
     } else if (readButton.textContent === "Reading status") {
       readButton.textContent = "Read";
-      // newBook.readingStatus = true;
       readButton.style.backgroundColor = "lightGreen";
     }
-    // newBook.readingStatus = "true";
-    //
   });
 
   // event for remove book button
@@ -149,6 +134,10 @@ function loopLibrary() {
   }
 }
 
-addBookToLibrary("Crime and Punishment", "Fyodor Dostoevsky", 720, "Want to read");
+addBookToLibrary(
+  "Crime and Punishment",
+  "Fyodor Dostoevsky",
+  720,
+  "Want to read"
+);
 loopLibrary();
-

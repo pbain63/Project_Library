@@ -84,15 +84,21 @@ button[id="submit"] {
   /* grid-template-rows: auto; */
   /* justify-content: space-around; */
   gap: 4rem;
+  margin-left: 2.5rem;
 }
 
 .card {
   width: 15rem;
   /* height: 15rem; */
-  background-color: aqua;
+  /* background-color: aqua; */
+  border: 1px solid black;
   text-align: center;
   overflow-wrap: break-word;
-  /* display: inline-block; */
+
+  background: linear-gradient(135deg, #2196f3 30%, #1565c0 50%);
+  color: #fff;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
 }
 
 .card-title {

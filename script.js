@@ -24,7 +24,7 @@ const titleInput = document.getElementById("title");
 const authorInput = document.getElementById("author");
 const numberOfPagesInput = document.getElementById("number-pages");
 const readingOption = document.getElementById("reading-option");
-const addLibButton = document.getElementById("submit");
+const submitButton = document.getElementById("submit");
 const dialogForm = document.getElementById("dialog-form");
 // const addLibButton = document.querySelector("#submit");
 // const dialogForm = document.querySelector(".dialog-form");
@@ -44,35 +44,32 @@ function addBookToLibrary(title, author, pages, readingStatus) {
   myLibrary.push(newBook);
 }
 
-function displayBooks() {
-  bookContainer.innerHTML = "";
+// function displayBooks() {
+//   bookContainer.innerHTML = "";
 
-  myLibrary.forEach((book, index) => {
-    const card = document.createElement("div");
-    card.classList.add("card");
-    card.setAttribute("data-book-num", index);
+//   myLibrary.forEach((book, index) => {
+//     const card = document.createElement("div");
+//     card.classList.add("card");
+//     card.setAttribute("data-book-num", index);
 
-    card.innerHTML = `
-      <div id="new-book-items-show-title">${book.title}</div>
-      <div id="new-book-items-show-author">${book.author}</div>
-      <div id="new-book-items-show-pages">${book.pages} pages</div>
-      <div id="new-book-items-show-status">${book.readingStatus}</div>
-          <div class="card-btn">
-            <button type="button" id="new-book-items-show-status"></button>
-            <button type="button" id="new-book-items-show-remove" class= "new-book-items-show-remove">Remove</button>
-          </div>
+//     card.innerHTML = `
+//       <div id="new-book-items-show-title">${book.title}</div>
+//       <div id="new-book-items-show-author">${book.author}</div>
+//       <div id="new-book-items-show-pages">${book.pages} pages</div>
+//       <div id="new-book-items-show-status">${book.readingStatus}</div>
+          
            
-            `;
-    bookContainer.appendChild(card);
-  });
-}
+//             `;
+//     bookContainer.appendChild(card);
+//   });
+// }
 
-addLibButton.addEventListener("click", () => {
+submitButton.addEventListener("click", () => {
   dialog.close();
   // dialogForm.reset();
 });
 
-dialogForm.addEventListener("submit", (e) => {
+submitButton.addEventListener("submit", (e) => {
   e.preventDefault();
 
   let title = titleInput.value;
@@ -83,7 +80,7 @@ dialogForm.addEventListener("submit", (e) => {
   addBookToLibrary(title, author, pages, readingStatus);
   displayBooks();
 
-  dialogForm.reset();
+  submitButton.reset();
   dialog.close();
 
   // displayBooks();
@@ -94,37 +91,3 @@ myLibrary.push(
 );
 
 displayBooks();
-
-// const showNewBookRemove = document.querySelectorAll(
-//   ".new-book-items-show-remove"
-// );
-
-// showNewBookRemove.forEach((button) => removeBookListener(button));
-
-// function removeBookListener(button) {
-//   button.addEventListener("click", (event) => {
-//     const selectedCard = event.target.closest(".card");
-
-//     let bookNumber = selectedCard.getAttribute("data-book-num");
-
-//     myLibrary.splice(`${bookNumber}`, 1);
-//     selectedCard.remove();
-//     displayBooks();
-//   });
-// }
-
-
-
-// const removeButton = document.querySelector(".new-book-items-show-remove"); //
-
-// removeButton.addEventListener("click", () => {
-//   removeBook(newBook);
-//   card.remove();
-// });
-
-// function removeBook(book) {
-//   const bookIndex = myLibrary.indexOf(book);
-//   if (bookIndex > -1) {
-//     myLibrary.splice(bookIndex, 1);
-//   }
-// }

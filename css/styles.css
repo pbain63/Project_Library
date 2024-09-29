@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-
   /* height: 100vh; */
 }
 
@@ -93,7 +92,6 @@ button[id="submit"] {
 }
 .new-book-items-card div {
   /* display: grid; */
-
 }
 /*  */
 dialog[open] {

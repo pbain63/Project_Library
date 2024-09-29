@@ -103,17 +103,18 @@ button[id="submit"] {
 
 .card-title {
   font-size: 130%;
+  margin-top: 1rem;
 }
 .card-title,
 .card-author,
 .card-pages,
 .reading-status {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .remove-book {
   display: block;
   margin: auto;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 /* .new-book-items-card {
   background-color: aquamarine;

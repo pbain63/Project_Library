@@ -69,7 +69,48 @@ function addBookToLibrary(title, author, pages, readingStatus) {
   bookContainer.appendChild(card);
 
   // create remove button
+  const removeButton = document.createElement("button");
+  removeButton.textContent = "Remove";
+  removeButton.classList.add("remove-book");
+  card.appendChild(removeButton);
+
+  // create reading status button
+  const readButton = document.createElement("button");
+  readButton.textContent = "Want to read";
+  readButton.classList.add("reading-status");
+  card.appendChild(readButton);
+
+  // event for reading status button
+  readButton.addEventListener("click", () => {
+    if (readButton.textContent === "Want to read") {
+      readButton.textContent = "Read";
+      readButton.style.backgroundColor = "lightGreen";
+    } else if (readButton.textContent === "Read") {
+      readButton.textContent = "Reading";
+      readButton.style.backgroundColor = "aquamarine";
+    } else if (readButton.textContent === "Reading") {
+      readButton.textContent = "Want to read";
+      readButton.style.backgroundColor = "lightBlue";
+    }
+    newBook.readingStatus = "true";
+    //
+  });
+
+  // event for remove book button
+  removeButton.addEventListener("click", () => {
+    removeBook(newBook);
+    card.remove();
+  });
 }
+// remove book function
+function removeBook(book) {
+  const bookIndex = myLibrary.indexOf(book);
+  if (bookIndex > -1) {
+    myLibrary.splice(bookIndex, 1);
+  }
+}
+
+
 
 // function displayBooks() {
 //   bookContainer.innerHTML = "";

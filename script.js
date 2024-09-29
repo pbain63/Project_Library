@@ -95,6 +95,12 @@ myLibrary.push(
 
 displayBooks();
 
+// const showNewBookRemove = document.querySelectorAll(
+//   ".new-book-items-show-remove"
+// );
+
+// showNewBookRemove.forEach((button) => removeBookListener(button));
+
 // function removeBookListener(button) {
 //   button.addEventListener("click", (event) => {
 //     const selectedCard = event.target.closest(".card");
@@ -107,24 +113,18 @@ displayBooks();
 //   });
 // }
 
-// const showNewBookRemove = document.querySelectorAll(
-//   ".new-book-items-show-remove"
-// );
 
-// showNewBookRemove.forEach((button) => removeBookListener(button));
 
-const removeButton = document.getElementsByClassName(
-  ".new-book-items-show-remove"
-); //
+// const removeButton = document.querySelector(".new-book-items-show-remove"); //
 
-removeButton.addEventListener("click", () => {
-  removeBook(newBook);
-  card.remove();
-});
+// removeButton.addEventListener("click", () => {
+//   removeBook(newBook);
+//   card.remove();
+// });
 
-function removeBook(book) {
-  const bookIndex = myLibrary.indexOf(book);
-  if (bookIndex > -1) {
-    myLibrary.splice(bookIndex, 1);
-  }
-}
+// function removeBook(book) {
+//   const bookIndex = myLibrary.indexOf(book);
+//   if (bookIndex > -1) {
+//     myLibrary.splice(bookIndex, 1);
+//   }
+// }

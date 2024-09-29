@@ -86,6 +86,7 @@ function addBookToLibrary(title, author, pages, readingStatus) {
   const removeButton = document.createElement("button");
   removeButton.textContent = "Remove";
   removeButton.classList.add("remove-book");
+  removeButton.style.backgroundColor = "orange";
   card.appendChild(removeButton);
 
   // create reading status button

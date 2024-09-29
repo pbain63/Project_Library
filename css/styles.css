@@ -101,14 +101,13 @@ button[id="submit"] {
 .card-title,
 .card-author,
 .card-pages,
-.remove-book {
+.reading-status {
   margin-bottom: 0.5rem;
 }
 .remove-book {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  
+  display: block;
+  margin: auto;
+  margin-bottom: 0.5rem;
 }
 /* .new-book-items-card {
   background-color: aquamarine;

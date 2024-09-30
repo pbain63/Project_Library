@@ -1,5 +1,5 @@
 # Project_Library
-Create a project about adding book to library with author name, book name, pages, whether read or not.
+Create a project about adding book to library with book name, author name, number of pages. Next add a button to change book's reading status and another button to remove the book cards from user interface.
 
 
 

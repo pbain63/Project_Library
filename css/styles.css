@@ -103,7 +103,7 @@ button[id="submit"] {
   overflow: auto;
   /* grid-template-rows: auto; */
   /* justify-content: space-around; */
-  gap: 4rem;
+  gap: 3rem;
   margin-left: 2.5rem;
 }
 

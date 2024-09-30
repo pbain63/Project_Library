@@ -76,6 +76,11 @@ button[id="submit"] {
   padding: 5px 0px;
   border-radius: 5px;
 }
+.library-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 .book-cards-container {
   display: grid;

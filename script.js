@@ -28,7 +28,7 @@ submitButton.addEventListener("click", (e) => {
 
   dialog.close();
   dialogForm.reset();
-  // dialog.style.display ='none';
+
   addBookToLibrary(title, author, pages, readingStatus);
 });
 
@@ -38,25 +38,6 @@ function Book(title, author, pages, readingStatus) {
   this.pages = pages;
   this.readingStatus = readingStatus;
 }
-
-// const titleInput = document.getElementById("title");
-// const authorInput = document.getElementById("author");
-// const numberOfPagesInput = document.getElementById("number-pages");
-// const readingOption = document.getElementById("reading-option");
-// const submitButton = document.getElementById("submit");
-// const dialogForm = document.getElementById("dialog-form");
-// const addLibButton = document.querySelector("#submit");
-// const dialogForm = document.querySelector(".dialog-form");
-
-// const bookContainer = document.querySelector(".book-cards-container");
-// const showNewBookCard = document.querySelector(".new-book-items-card");
-// const showNewBookTitle = document.getElementById("new-book-items-show-title");
-// const showNewBookAuthor = document.getElementById("new-book-items-show-author");
-// const showNewBookPages = document.getElementById("new-book-items-show-pages");
-// const showNewBookStatus = document.getElementById("new-book-items-show-status");
-// const showNewBookRemove = document.getElementById("new-book-items-show-remove");
-
-// console.log(myLibrary[myLibrary.length-1]);
 
 function addBookToLibrary(title, author, pages, readingStatus) {
   const newBook = new Book(title, author, pages, readingStatus);
@@ -135,12 +116,7 @@ function loopLibrary() {
   }
 }
 
-addBookToLibrary(
-  "Crime and Punishment",
-  "Fyodor Dostoevsky",
-  720,
-  "Reading"
-);
+addBookToLibrary("Crime and Punishment", "Fyodor Dostoevsky", 720, "Reading");
 addBookToLibrary(
   "Harry Potter and the Order of the Phoenix",
   "J. K. Rowling",

@@ -179,3 +179,23 @@ dialog[open]::backdrop {
   }
 }
 /*  */
+
+@media (max-width: 425px) {
+  .book-cards-container {
+    /* display: none; */
+    /* display: grid; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* align-items: center; */
+    /* place-content: center; */
+     place-items: center;
+
+  }
+  .card {
+    /* display: grid; */
+     /* place-content: center; */
+     /* justify-content: center; */
+    /* align-content: center; */
+    /* place-items: center; */
+  }
+}

@@ -2,7 +2,7 @@ const bookContainer = document.querySelector(".book-cards-container");
 const dialog = document.getElementById("dialog");
 const submitButton = document.getElementById("submit");
 
-const showDialogBtn = document.getElementById("show-dialog");
+const showDialogBtn = document.getElementById("show-dialog-btn");
 
 const closeDialog = document.getElementById("dialog-close");
 const dialogForm = document.getElementById("dialog-form");

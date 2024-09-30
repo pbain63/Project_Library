@@ -85,6 +85,7 @@ button[id="submit"] {
 #show-dialog-btn {
   background-color:#2196f3;
   color: #fff;
+  font-size: 150%;
   display: block;
   margin: auto;
   padding: 10px 20px;

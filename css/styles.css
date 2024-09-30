@@ -179,10 +179,4 @@ dialog[open]::backdrop {
   .book-cards-container {
     place-items: center;
   }
-
-  #number-pages,
-  #reading-option,
-  #submit {
-    /* width: 104%; */
-  }
 }

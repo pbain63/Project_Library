@@ -93,28 +93,18 @@ button[id="submit"] {
   margin: auto;
   padding: 10px 20px;
   border-radius: 5px;
-  /* margin-bottom: 2rem; */
-  /* text-align: center; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 .book-cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   overflow: auto;
   /* grid-template-rows: auto; */
-  /* justify-content: space-around; */
   gap: 3rem;
   margin: 2rem 3rem 3rem 3rem;
-  /* margin-left: 2.5rem; */
 }
 
 .card {
   width: 15rem;
-  /* height: 15rem; */
-  /* background-color: aqua; */
-  /* border: 1px solid black; */
   text-align: center;
   overflow-wrap: break-word;
 
@@ -139,14 +129,6 @@ button[id="submit"] {
   margin: auto;
   margin-bottom: 1rem;
 }
-/* .new-book-items-card {
-  background-color: aquamarine;
-  display: inline-block;
-  width: 300px;
-  overflow-wrap: break-word;
-  margin: 20px;
-  text-align: center;
-} */
 
 /* dialog animation */
 dialog[open] {
@@ -180,22 +162,14 @@ dialog[open]::backdrop {
 }
 /*  */
 
-.container {
-  /* position: relative; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* height: 100%; */
-}
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 2rem;
-  /* background-color: #2196f3; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* color: white; */
 }
 .love {
   color: red;
@@ -203,19 +177,12 @@ dialog[open]::backdrop {
 
 @media (max-width: 425px) {
   .book-cards-container {
-    /* display: none; */
-    /* display: grid; */
-    /* justify-content: center; */
-    /* align-content: center; */
-    /* align-items: center; */
-    /* place-content: center; */
     place-items: center;
   }
-  .card {
-    /* display: grid; */
-    /* place-content: center; */
-    /* justify-content: center; */
-    /* align-content: center; */
-    /* place-items: center; */
+
+  #number-pages,
+  #reading-option,
+  #submit {
+    /* width: 104%; */
   }
 }

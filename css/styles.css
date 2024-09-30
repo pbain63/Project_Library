@@ -80,6 +80,7 @@ button[id="submit"] {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  font-size: 130%;
 }
 
 #show-dialog-btn {

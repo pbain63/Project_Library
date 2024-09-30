@@ -86,7 +86,7 @@ button[id="submit"] {
   font-size: 160%;
 }
 #show-dialog-btn {
-  background-color:#2196f3;
+  background-color: #2196f3;
   color: #fff;
   font-size: 150%;
   display: block;
@@ -183,6 +183,21 @@ dialog[open]::backdrop {
 }
 /*  */
 
+.footer {
+  position: fixed;
+  bottom: 0rem;
+  left: 35rem;
+  height: 2rem;
+  /* background-color: #2196f3; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: white; */
+}
+.love {
+  color: red;
+}
+
 @media (max-width: 425px) {
   .book-cards-container {
     /* display: none; */
@@ -191,13 +206,12 @@ dialog[open]::backdrop {
     /* align-content: center; */
     /* align-items: center; */
     /* place-content: center; */
-     place-items: center;
-
+    place-items: center;
   }
   .card {
     /* display: grid; */
-     /* place-content: center; */
-     /* justify-content: center; */
+    /* place-content: center; */
+    /* justify-content: center; */
     /* align-content: center; */
     /* place-items: center; */
   }

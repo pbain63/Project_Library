@@ -91,7 +91,7 @@ button[id="submit"] {
   margin: auto;
   padding: 10px 20px;
   border-radius: 5px;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   /* text-align: center; */
   /* display: flex; */
   /* justify-content: center; */
@@ -104,7 +104,8 @@ button[id="submit"] {
   /* grid-template-rows: auto; */
   /* justify-content: space-around; */
   gap: 3rem;
-  margin-left: 2.5rem;
+  margin: 2rem 3rem;
+  /* margin-left: 2.5rem; */
 }
 
 .card {

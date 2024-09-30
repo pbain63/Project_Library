@@ -82,7 +82,9 @@ button[id="submit"] {
   justify-content: space-evenly;
   font-size: 130%;
 }
-
+.library-title h2 {
+  font-size: 160%;
+}
 #show-dialog-btn {
   background-color:#2196f3;
   color: #fff;

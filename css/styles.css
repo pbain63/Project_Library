@@ -79,8 +79,8 @@ button[id="submit"] {
 
 .book-cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  /* overflow: auto; */
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  overflow: auto;
   /* grid-template-rows: auto; */
   /* justify-content: space-around; */
   gap: 4rem;
@@ -91,7 +91,7 @@ button[id="submit"] {
   width: 15rem;
   /* height: 15rem; */
   /* background-color: aqua; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: center;
   overflow-wrap: break-word;
 
@@ -128,7 +128,7 @@ button[id="submit"] {
   /* display: grid; */
 }
 
-/*  */
+/* dialog animation */
 dialog[open] {
   opacity: 1;
   transform: scaleY(1);

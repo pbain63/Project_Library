@@ -73,7 +73,6 @@ function addBookToLibrary(title, author, pages, readingStatus) {
   // create reading status button
   const readButton = document.createElement("button");
   readButton.textContent = `${readingStatus}`;
-  // readButton.textContent = "Want to read";
   readButton.classList.add("reading-status");
   card.appendChild(readButton);
 

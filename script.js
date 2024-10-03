@@ -116,10 +116,10 @@ function loopLibrary() {
 }
 
 addBookToLibrary("Crime and Punishment", "Fyodor Dostoevsky", 720, "Reading");
-addBookToLibrary(
-  "Harry Potter and the Order of the Phoenix",
-  "J. K. Rowling",
-  766,
-  "Want to read"
-);
+// addBookToLibrary(
+//   "Harry Potter and the Order of the Phoenix",
+//   "J. K. Rowling",
+//   766,
+//   "Want to read"
+// );
 loopLibrary();

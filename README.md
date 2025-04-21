@@ -47,7 +47,9 @@ https://pbain63.github.io/Project_Library/
 
 1. Clone the repository:
 
-git clone https://github.com/pbain63/library-app.git 2. Open **index.html** in your browser
+git clone https://github.com/pbain63/library-app.git 
+
+2. Open **index.html** in your browser
 
 ## Usage
 
@@ -62,5 +64,7 @@ git clone https://github.com/pbain63/library-app.git 2. Open **index.html** in y
 - Toggle read status
 
 - Remove the book
+
+
 
 Technology: HTML5, CSS3, JavaScript, Git for version control

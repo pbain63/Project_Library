@@ -18,11 +18,11 @@ https://pbain63.github.io/Project_Library/
 
 ## Screenshots:
 
-![Alt text](/assets/Library_1.png?raw= true "Library_image 1")
+![Alt text](/assets/Library_1.png?raw=true "Library_image 1")
 
-![Alt text](/assets/Library_2.png?raw= true "Library_image 2")
+![Alt text](/assets/Library_2.png?raw=true "Library_image 2")
 
-![Alt text](/assets/Library_3.png?raw= true "Library_image 3")
+![Alt text](/assets/Library_3.png?raw=true "Library_image 3")
 
 ## Features
 

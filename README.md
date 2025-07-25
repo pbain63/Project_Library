@@ -12,9 +12,9 @@ A simple web-based library application that allows users to:
 
 - Remove books from the library
 
-## Live Demo:
+## [Live Demo](https://pbain63.github.io/Project_Library/)
 
-https://pbain63.github.io/Project_Library/
+---
 
 ## Screenshots:
 
@@ -23,6 +23,8 @@ https://pbain63.github.io/Project_Library/
 ![Alt text](/assets/Library_2.png?raw=true "Library_image 2")
 
 ![Alt text](/assets/Library_3.png?raw=true "Library_image 3")
+
+---
 
 ## Features
 
@@ -34,22 +36,30 @@ https://pbain63.github.io/Project_Library/
 
 - Remove books from the library
 
+---
+
 **Interactive UI**:
 
 - Elegant CSS animations for form transitions when opening/closing the form
 - Clean, card-based book display
 
+---
+
 ### Data Persistence:
 
 - Books are stored in browser's local storage
+
+---
 
 ## Installation
 
 1. Clone the repository:
 
-git clone https://github.com/pbain63/library-app.git 
+   `git clone https://github.com/pbain63/library-app.git`
 
-2. Open **index.html** in your browser
+2. Open `index.html` in your browser
+
+---
 
 ## Usage
 
@@ -61,10 +71,14 @@ git clone https://github.com/pbain63/library-app.git
 
 4. Use the buttons on each book card to:
 
-- Toggle read status
+   - Toggle read status
 
-- Remove the book
+   - Remove the book
 
+---
 
+## Technology:
 
-Technology: HTML5, CSS3, JavaScript, Git for version control
+HTML5, CSS3, JavaScript, Git for version control
+
+---

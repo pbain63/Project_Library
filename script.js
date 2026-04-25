@@ -1,9 +1,7 @@
 const bookContainer = document.querySelector(".book-cards-container");
 const dialog = document.getElementById("dialog");
 const submitButton = document.getElementById("submit");
-
 const showDialogBtn = document.getElementById("show-dialog-btn");
-
 const closeDialog = document.getElementById("dialog-close");
 const dialogForm = document.getElementById("dialog-form");
 
@@ -32,11 +30,14 @@ submitButton.addEventListener("click", (e) => {
   addBookToLibrary(title, author, pages, readingStatus);
 });
 
-function Book(title, author, pages, readingStatus) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.readingStatus = readingStatus;
+// Converted to class
+class Book {
+  constructor(title, author, pages, readingStatus) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.readingStatus = readingStatus;
+  }
 }
 
 function addBookToLibrary(title, author, pages, readingStatus) {
@@ -63,20 +64,17 @@ function addBookToLibrary(title, author, pages, readingStatus) {
 
   bookContainer.appendChild(card);
 
-  // create remove button
   const removeButton = document.createElement("button");
   removeButton.textContent = "Remove";
   removeButton.classList.add("remove-book");
   removeButton.style.backgroundColor = "orange";
   card.appendChild(removeButton);
 
-  // create reading status button
   const readButton = document.createElement("button");
   readButton.textContent = `${readingStatus}`;
   readButton.classList.add("reading-status");
   card.appendChild(readButton);
 
-  // event for reading status button
   readButton.addEventListener("click", () => {
     if (readButton.textContent === "Want to read") {
       readButton.textContent = "Read";
@@ -93,13 +91,12 @@ function addBookToLibrary(title, author, pages, readingStatus) {
     }
   });
 
-  // event for remove book button
   removeButton.addEventListener("click", () => {
     removeBook(newBook);
     card.remove();
   });
 }
-// remove book function
+
 function removeBook(book) {
   const bookIndex = myLibrary.indexOf(book);
   if (bookIndex > -1) {
@@ -107,19 +104,11 @@ function removeBook(book) {
   }
 }
 
-// function to loop through library
 function loopLibrary() {
   for (let i = 0; i < myLibrary.length; i++) {
     console.log(myLibrary[i].title);
-    //
   }
 }
 
 addBookToLibrary("Crime and Punishment", "Fyodor Dostoevsky", 720, "Reading");
-// addBookToLibrary(
-//   "Harry Potter and the Order of the Phoenix",
-//   "J. K. Rowling",
-//   766,
-//   "Want to read"
-// );
 loopLibrary();

@@ -64,13 +64,14 @@ function addBookToLibrary(title, author, pages, readingStatus) {
 
   bookContainer.appendChild(card);
 
-   // create remove button
+  // create remove button
   const removeButton = document.createElement("button");
   removeButton.textContent = "Remove";
   removeButton.classList.add("remove-book");
   removeButton.style.backgroundColor = "orange";
   card.appendChild(removeButton);
 
+  // create reading status button
   const readButton = document.createElement("button");
   readButton.textContent = `${readingStatus}`;
   readButton.classList.add("reading-status");

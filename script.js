@@ -101,6 +101,7 @@ function addBookToLibrary(title, author, pages, readingStatus) {
   });
 }
 
+// remove book function
 function removeBook(book) {
   const bookIndex = myLibrary.indexOf(book);
   if (bookIndex > -1) {

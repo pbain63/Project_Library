@@ -64,6 +64,7 @@ function addBookToLibrary(title, author, pages, readingStatus) {
 
   bookContainer.appendChild(card);
 
+   // create remove button
   const removeButton = document.createElement("button");
   removeButton.textContent = "Remove";
   removeButton.classList.add("remove-book");

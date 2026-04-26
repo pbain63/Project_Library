@@ -94,6 +94,7 @@ function addBookToLibrary(title, author, pages, readingStatus) {
     }
   });
 
+  // event for remove book button
   removeButton.addEventListener("click", () => {
     removeBook(newBook);
     card.remove();

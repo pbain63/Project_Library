@@ -77,6 +77,7 @@ function addBookToLibrary(title, author, pages, readingStatus) {
   readButton.classList.add("reading-status");
   card.appendChild(readButton);
 
+  // event for reading status button
   readButton.addEventListener("click", () => {
     if (readButton.textContent === "Want to read") {
       readButton.textContent = "Read";

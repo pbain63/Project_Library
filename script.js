@@ -109,6 +109,7 @@ function removeBook(book) {
   }
 }
 
+// function to loop through library
 function loopLibrary() {
   for (let i = 0; i < myLibrary.length; i++) {
     console.log(myLibrary[i].title);

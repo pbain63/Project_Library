@@ -26,7 +26,7 @@ svg {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
 }
 .dialog-book-header {
   margin: auto;
@@ -78,7 +78,7 @@ svg[id="dialog-close"] {
 button[id="submit"] {
   padding: 5px 0px;
   border-radius: 5px;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 .library-title {
   display: flex;

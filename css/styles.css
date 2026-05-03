@@ -179,6 +179,10 @@ dialog[open]::backdrop {
 }
 
 @media (max-width: 425px) {
+  #dialog {
+    padding: 0;
+  }
+
   .book-cards-container {
     place-items: center;
   }

@@ -134,7 +134,7 @@ button[id="submit"] {
 /* dialog animation */
 #dialog {
   padding: 2rem;
-  
+  margin: auto;
 }
 dialog[open] {
   opacity: 1;

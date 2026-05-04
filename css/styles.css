@@ -183,6 +183,10 @@ dialog[open]::backdrop {
     padding: 0;
   }
 
+  .dialog-header {
+    margin-top: 1.5rem;
+  }
+
   .book-cards-container {
     place-items: center;
   }

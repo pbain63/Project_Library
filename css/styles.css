@@ -187,6 +187,10 @@ dialog[open]::backdrop {
     margin-top: 1.5rem;
   }
 
+  button[id="submit"] {
+    margin-bottom: 2rem;
+  }
+
   .book-cards-container {
     place-items: center;
   }

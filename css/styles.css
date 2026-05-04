@@ -26,6 +26,7 @@ svg {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 1.5rem;
 }
 .dialog-book-header {
   margin: auto;

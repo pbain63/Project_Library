@@ -18,11 +18,9 @@ A simple web-based library application that allows users to:
 
 ## Screenshots:
 
-![Alt text](/assets/Library_1.png?raw=true "Library_image 1")
-
-![Alt text](/assets/Library_2.png?raw=true "Library_image 2")
-
-![Alt text](/assets/Library_3.png?raw=true "Library_image 3")
+| In general View                                                  | Add a cart to library                                            | After adding books                                                               |
+| ---------------------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| ![Library_in-general](assets/screenshots/Library_in-general.png) | ![Library_add-a-book](assets/screenshots/Library_add-a-book.png) | ![Library_after-adding-books](assets/screenshots/Library_after-adding-books.png) |
 
 ---
 

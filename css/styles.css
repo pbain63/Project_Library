@@ -74,8 +74,10 @@ svg[id="dialog-close"] {
   cursor: pointer;
 }
 
+
+
 button[id="submit"] {
-  padding: 5px 0px;
+  padding: 5px 10px;
   border-radius: 5px;
 }
 .library-title {

@@ -74,7 +74,10 @@ svg[id="dialog-close"] {
   cursor: pointer;
 }
 
-
+#button-div {
+  display: flex;
+  justify-content: center;
+}
 
 button[id="submit"] {
   padding: 5px 10px;

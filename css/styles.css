@@ -32,11 +32,11 @@ svg {
   font-size: 200%;
 }
 
-input[id="number-pages"],
+/* input[id="number-pages"],
 select[id="reading-option"],
 button[id="submit"] {
   width: 100%;
-}
+} */
 
 input,
 select {

@@ -178,7 +178,7 @@ dialog[open]::backdrop {
   color: red;
 }
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
   #dialog {
     padding: 0;
   }
@@ -194,4 +194,4 @@ dialog[open]::backdrop {
   .book-cards-container {
     place-items: center;
   }
-}
+} */

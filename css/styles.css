@@ -32,12 +32,6 @@ svg {
   font-size: 200%;
 }
 
-/* input[id="number-pages"],
-select[id="reading-option"],
-button[id="submit"] {
-  width: 100%;
-} */
-
 input,
 select {
   display: block;
@@ -182,21 +176,3 @@ dialog[open]::backdrop {
 .love {
   color: red;
 }
-
-/* @media (max-width: 425px) {
-  #dialog {
-    padding: 0;
-  }
-
-  .dialog-header {
-    margin-top: 1.5rem;
-  }
-
-  button[id="submit"] {
-    margin-bottom: 2rem;
-  }
-
-  .book-cards-container {
-    place-items: center;
-  }
-} */

@@ -7,7 +7,7 @@
 }
 
 body {
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 
 input,
@@ -100,7 +100,11 @@ button[id="submit"] {
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   overflow: auto;
   gap: 3rem;
-  margin: 2rem 3rem 3rem 3rem;
+  /* margin: 2rem 3rem 3rem 3rem; */
+  /* width: 90%; */
+  /* margin: 0 auto; */
+  place-items: center;
+
 }
 
 .card {

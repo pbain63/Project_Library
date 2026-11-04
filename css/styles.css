@@ -104,7 +104,8 @@ button[id="submit"] {
   /* width: 90%; */
   /* margin: 0 auto; */
   place-items: center;
-
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .card {

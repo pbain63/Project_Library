@@ -100,9 +100,6 @@ button[id="submit"] {
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   overflow: auto;
   gap: 3rem;
-  /* margin: 2rem 3rem 3rem 3rem; */
-  /* width: 90%; */
-  /* margin: 0 auto; */
   place-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
